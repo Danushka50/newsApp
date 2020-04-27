@@ -10,9 +10,9 @@ import React, {Component} from 'react';
 import {createStore, applyMiddleware} from 'redux';
 import ReduxThunk from 'redux-thunk';
 import {Provider} from 'react-redux';
-import Reducers from '../react_native/redux/reducers';
-import Navigation from './services/Navigation';
-import {MainSwitchNavigator} from './navigators/MainSwitchNavigator';
+import Reducers from './react_native/redux/reducers';
+import Navigation from './react_native/nav/Navigation';
+import {MainNavigator} from './react_native/navigators/MainNavigator';
 console.disableYellowBox = true;
 
 export default class App extends Component {
@@ -26,7 +26,7 @@ export default class App extends Component {
     return (
       <Provider store={createStore(Reducers, {}, applyMiddleware(ReduxThunk))}>
         {
-          <MainSwitchNavigator
+          <MainNavigator
             ref={nav => {
               Navigation.setTopLevelNavigator(nav);
             }}
