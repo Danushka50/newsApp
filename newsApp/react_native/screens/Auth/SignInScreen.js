@@ -123,7 +123,7 @@ class SignInScreen extends Component {
 
         <View style={styles.signUpView}>
           <Text>Don't have an account?</Text>
-          <TouchableOpacity onPress={() => this.SignIn()}>
+          <TouchableOpacity onPress={() => {}}>
             <Text style={styles.SignUpText}>Sign Up</Text>
           </TouchableOpacity>
         </View>
@@ -179,7 +179,7 @@ const styles = StyleSheet.create({
     marginRight: 20,
   },
   forgotPassword: {
-    color: colors.showMoreNewsDeatls,
+    color: colors.purple,
     fontSize: 16,
   },
   signUpView: {
@@ -189,7 +189,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   SignUpText: {
-    color: colors.showMoreNewsDeatls,
+    color: colors.purple,
     marginLeft: 10,
   },
   socialMediaMainView: {

@@ -1,10 +1,5 @@
-export const PROTOCOL = 'http://';
-export const HOST = 'newsapi.org/v2/';
-export const API_TOKEN = 'ff5291c616384faaa7f707deffc1a04e'
-export const PAGE_SIZE = '20'
+export const API_URL = 'http://newsapi.org/v2/';
+export const API_KEY = 'ff5291c616384faaa7f707deffc1a04e';
 
-export const NEWS = `${PROTOCOL}${HOST}top-headlines?country=us&apiKey=${API_TOKEN}&pageSize=${PAGE_SIZE}`;
-export const CATEGORY_NEWS = `${PROTOCOL}${HOST}sources?country=us&apiKey=${API_TOKEN}`;
-
-
-
+export const NEWS = `${API_URL}top-headlines?country=us&apiKey=${API_KEY}&pageSize=20`;
+export const CATEGORY_NEWS = `${API_URL}sources?country=us&apiKey=${API_KEY}`;
