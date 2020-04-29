@@ -4,5 +4,6 @@ const icons = {
   twitter: require('../asserts/img/twitter.png'),
   splashScreen: require('../asserts/img/splashScreen.png'),
   defaultImage: require('../asserts/img/default_news.png'),
+  user: require('../asserts/img/user.png'),
 };
 export default icons;

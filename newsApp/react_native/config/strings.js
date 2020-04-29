@@ -1,10 +1,10 @@
 const strings = {
     user: {
-        drawerHeaderOne: 'Welcome to News',
-        drawerHeaderTwo: 'Danushka',
+        drawerHeader: 'Welcome',
+        userName: 'Danushka',
+        LastName : 'Sandaruwan',
+        userId: '5556-5547-6669',
         logout: 'Log out',
-        country : 'Sri Lanka',
-        gender : 'Male',
         
     },
     news :{

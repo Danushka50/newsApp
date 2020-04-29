@@ -35,10 +35,10 @@ const CustomDrawerContentComponent = props => (
         <View style={styles.headerRight}>
           <View style={{flexDirection: 'row'}}>
             <Text style={styles.textHeader}>
-              {strings.user.drawerHeaderOne}
+              {strings.user.drawerHeader}
             </Text>
           </View>
-          <Text style={styles.textName}>{strings.user.drawerHeaderTwo}</Text>
+          <Text style={styles.textName}>{strings.user.userName}</Text>
         </View>
       </TouchableOpacity>
       <DrawerNavigatorItems {...props} />

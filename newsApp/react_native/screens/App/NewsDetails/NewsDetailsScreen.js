@@ -86,15 +86,15 @@ class NewsDetailsScreen extends Component {
                   </Text>
                 }
               </View>
-              <TouchableHighlight
-                style={styles.shoFullView}
-                onPress={() => this.openURL(newsItem.item.url)}>
-                <Text style={styles.showURL}>
-                  {strings.news.newsDetailsOpenURL}
-                </Text>
-              </TouchableHighlight>
             </ScrollView>
           </View>
+          <TouchableHighlight
+            style={styles.shoFullView}
+            onPress={() => this.openURL(newsItem.item.url)}>
+            <Text style={styles.showURL}>
+              {strings.news.newsDetailsOpenURL}
+            </Text>
+          </TouchableHighlight>
         </View>
       );
     } else {
@@ -133,7 +133,7 @@ const styles = EStyleSheet.create({
   shoFullView: {
     backgroundColor: colors.primary,
     borderRadius: '5rem',
-    marginTop: '50rem',
+    margin: '10rem',
   },
   showURL: {
     fontSize: '15rem',
