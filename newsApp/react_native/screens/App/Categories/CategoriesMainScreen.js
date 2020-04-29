@@ -9,9 +9,7 @@ import {
 } from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import {connect} from 'react-redux';
-import colors from '../../../config/colors';
 import * as actions from '../../../redux/actions';
-import {Card} from '../../../components';
 
 const entireScreenWidth = Dimensions.get('window').width;
 EStyleSheet.build({$rem: entireScreenWidth / 380});
@@ -107,9 +105,9 @@ const styles = EStyleSheet.create({
   cardStyle: {
     marginBottom: '10rem',
     marginHorizontal: '20rem',
-    marginVertical:'10rem',
-    borderRadius:5,
-    borderWidth:0.5
+    marginVertical: '10rem',
+    borderRadius: '5rem',
+    borderWidth: 0.5,
   },
   imageView: {
     width: '150rem',
@@ -122,9 +120,9 @@ const styles = EStyleSheet.create({
     borderRadius: 10 / 2,
   },
   imageText: {
-    fontSize: 18,
+    fontSize: '16rem',
     textAlign: 'center',
-    marginTop: 5,
+    marginTop: '8rem',
   },
 });
 

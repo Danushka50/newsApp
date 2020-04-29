@@ -7,16 +7,13 @@ import {
   TouchableOpacity,
   Text,
   StyleSheet,
-  Keyboard,
   Image,
 } from 'react-native';
 import {connect} from 'react-redux';
 import * as actions from '../../redux/actions';
 import images from '../../config/images';
 import colors from '../../config/colors';
-import strings from '../../config/strings';
 import {REG_EMAIL_ADDRESS} from '../../config/constants';
-import Toast, {DURATION} from 'react-native-easy-toast';
 import AsyncStorage from '@react-native-community/async-storage';
 import Navigation from '../../nav/Navigation';
 
@@ -224,7 +221,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const mapStateToProps = state => {
+const mapStateToProps = () => {
   return {};
 };
 
